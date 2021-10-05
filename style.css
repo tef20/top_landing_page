@@ -1,4 +1,57 @@
+/* Variables */
+:root {
+    --primary-color: #F9FAF8;
+    --primary-color-dull: #E5E7EB;
+    --secondary-color: #1F2937;
+    --tirtiary-color: #3882F6;
+}
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main stylesheet */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionContainer {
+    margin: 0 100px;
+    display: flex;
+}
+
+header,
+footer {
+    background-color: var(--secondary-color);
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+.headerLinks ul {
+    display: flex;
+    gap: 12px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+
 }
