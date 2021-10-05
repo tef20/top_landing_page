@@ -20,18 +20,29 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
 /* Main stylesheet */
 
+/* BODY */
 body {
     min-height: 100vh;
 
     display: flex;
     flex-direction: column;
+
+    font-family: sans-serif;
 }
 
 .sectionContainer {
-    margin: 0 100px;
+    margin: 0 10%;
     display: flex;
+    padding: 12px;
+    padding-bottom: 50px;
 }
 
 header,
@@ -39,17 +50,109 @@ footer {
     background-color: var(--secondary-color);
 }
 
+/* HEADER */
+header .sectionContainer {
+    justify-content: space-between;
+    align-items: center;
+}
+
 header h1 {
     color: var(--primary-color);
     font-size: 24px;
 }
+
 .headerLinks ul {
     display: flex;
     gap: 12px;
 }
 
+.headerLink {
+    font-size: 18px;
+    color: var(--primary-color-dull);
+}
+
+/* MAIN */
 main {
     flex: 1;
+}
+
+/* SIGNUP PANEL */
+.signUpPanel {
+    background-color: var(--secondary-color);    
+}
+
+.signUpPanel .sectionContainer {
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.signUpTile {
+    flex-basis: 100%;
+}
+
+.signUpTile h2 {
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.signUpTile p {
+    color: var(--primary-color-dull);
+    padding-bottom: 5px;
+}
+
+.signUpTile button {
+    background-color: var(--tirtiary-color);
+    color: var(--primary-color);
+    padding: 6px 16px;
+}
+
+.signUpPanel .sectionContainer img {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    color: var(--primary-color-dull);
+    background-color: rgba(229, 231, 235, 0.3);
+}
+
+/* INFORMATION PANEL */
+.infoPanel .sectionContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoPanel h3 {
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-weight: extra-bold;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.infoGallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 42px;
+    flex-wrap: wrap;
+}
+
+.infoCard {
+    width: 150px;
+}
+
+.infoCard img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--tirtiary-color);
+    border-radius: 10px;
+}
+
+.infoCard p {
+    text-align: center;
+    color: var(--secondary-color);
 }
 
 footer {
